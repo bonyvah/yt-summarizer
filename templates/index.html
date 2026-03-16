@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YT Video Summarizer</title>
+</head>
+<body>
+  <input type="text" id="i" placeholder="paste url here">
+  <button id="btn">Summarize</button>
+  <div id="s"></div>
+
+  <script>
+    document.getElementById('btn').onclick = async function () {
+      const url = document.getElementById('i').value
+      const response = await fetch('', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({url})
+      })
+      const result = await response.json()
+      document.getElementById('s').innerHTML = result
+    }
+  </script>
+
+
+</body>
+</html>
