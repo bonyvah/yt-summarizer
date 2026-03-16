@@ -1,5 +1,4 @@
 from youtube_transcript_api import YouTubeTranscriptApi
-from gilas import plist
 
 ytt_api = YouTubeTranscriptApi()
 
