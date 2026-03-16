@@ -1,4 +1,3 @@
-from gilas import plist
 
 a = "https://www.youtube.com/watch?v=wTT8QaE0nnw&t=2s"
 b ="https://youtu.be/wTT8QaE0nnw?si=9nWDXr4T-1R7UUNE"
